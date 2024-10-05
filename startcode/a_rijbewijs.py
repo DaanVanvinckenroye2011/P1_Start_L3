@@ -1,11 +1,9 @@
-# Maak een selectie om na te gaan of iemand oud genoeg is voor een rijbewijs.
-def check_rijbewijsleeftijd(leeftijd):
-    rijbewijsleeftijd = 18
 
-    # Schrijf hier jouw selectie!
+def check_rijbewijsleeftijd():
+    leeftijd = int(input("Hoe oud ben je?"))
+    if leeftijd < 18:
+        print("Je moet 18 zijn om met de auto te mogen rijden")
+    elif leeftijd >= 18:
+        print("Ik zou je aanraden om je rijbewijs te gaan halen, je leven is dan veel vrijer.")
 
-# Vraag de leeftijd aan de gebruiker
-input_leeftijd = int(input("Hoe oud ben je? "))
-
-# Roep de functie aan om de leeftijd te controleren
-check_rijbewijsleeftijd(input_leeftijd)
+check_rijbewijsleeftijd()
